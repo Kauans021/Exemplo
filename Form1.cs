@@ -11,7 +11,18 @@ namespace Exemplo
         {
             InitializeComponent();
             op = new Operacoes();
+
+        }
+
+        public void cleanInputs()
+        {
+            string vazio = " ";
+            inputTextX.Visible = true;
+            inputTextX.Text = vazio;
+
             
+            inputTextY.Visible = true;
+            inputTextY.Text = vazio;
         }
         public void setInputs()
         {
@@ -22,7 +33,7 @@ namespace Exemplo
 
         public void printResult1(double x, double y, string operacao, double result)
         {
-            string formatoSaida = " "+ x+operacao + " = ";
+            string formatoSaida = " " + x + operacao + " = ";
             labelOutput.Visible = true;
             labelOutput.Text = formatoSaida;
 
@@ -45,7 +56,7 @@ namespace Exemplo
 
         public void printResult3(double x, double y, string operacao, double result)
         {
-            string formatoSaida = " "+ operacao + x + " = ";
+            string formatoSaida = " " + operacao + x + " = ";
             labelOutput.Visible = true;
             labelOutput.Text = formatoSaida;
 
@@ -54,13 +65,33 @@ namespace Exemplo
             labelOutput2.Text = resultado;
 
         }
-        public void printResult(double x, double y, string operacao, double result)
+        public void printResult6(string operacao)
         {
-            string formatoSaida = ""+ x + operacao + y + " = ";
+            string formatoSaida = " ";
             labelOutput.Visible = true;
             labelOutput.Text = formatoSaida;
 
-            string resultado = ""+result+"";
+            string resultado = "";
+            labelOutput2.Visible = true;
+            labelOutput2.Text = resultado;
+
+            string vazio = " ";
+            inputTextX.Visible = true;
+            inputTextX.Text = vazio;
+
+
+            inputTextY.Visible = true;
+            inputTextY.Text = vazio;
+
+
+        }
+        public void printResult(double x, double y, string operacao, double result)
+        {
+            string formatoSaida = "" + x + operacao + y + " = ";
+            labelOutput.Visible = true;
+            labelOutput.Text = formatoSaida;
+
+            string resultado = "" + result + "";
             labelOutput2.Visible = true;
             labelOutput2.Text = resultado;
         }
@@ -138,7 +169,17 @@ namespace Exemplo
             printResult(op.getX(), op.getY(), " elevado á ", result);
         }
 
-     
+        public void onBtnApagar_Click(object sender, EventArgs e)
+        {
+            setInputs();
+            string result = op.apagar();
+            printResult6(" ");
+            
+        }
 
+       
+
+        
     }
+    
 }

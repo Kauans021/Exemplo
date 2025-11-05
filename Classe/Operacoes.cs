@@ -82,5 +82,12 @@ namespace Exemplo.Classes
        
         }
 
+        public string apagar()
+        {
+            return "";
+
+        }
+
+
     }
 }

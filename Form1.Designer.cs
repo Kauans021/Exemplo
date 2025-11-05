@@ -106,6 +106,7 @@
             inputTextX.Name = "inputTextX";
             inputTextX.Size = new Size(223, 31);
             inputTextX.TabIndex = 2;
+            
             // 
             // button3
             // 
@@ -287,9 +288,9 @@
             // 
             labelOutput2.AutoSize = true;
             labelOutput2.BackColor = Color.FromArgb(40, 42, 54);
-            labelOutput2.Font = new Font("Segoe UI", 25F);
+            labelOutput2.Font = new Font("Segoe UI", 20F);
             labelOutput2.ForeColor = Color.FromArgb(255, 127, 84);
-            labelOutput2.Location = new Point(531, 243);
+            labelOutput2.Location = new Point(516, 214);
             labelOutput2.MaximumSize = new Size(100, 90);
             labelOutput2.MinimumSize = new Size(100, 90);
             labelOutput2.Name = "labelOutput2";
@@ -297,6 +298,7 @@
             labelOutput2.Size = new Size(100, 90);
             labelOutput2.TabIndex = 16;
             labelOutput2.Visible = false;
+            
             // 
             // button9
             // 
@@ -315,6 +317,7 @@
             button9.TabIndex = 17;
             button9.Text = "APAGAR";
             button9.UseVisualStyleBackColor = false;
+            button9.Click += onBtnApagar_Click;
             // 
             // Form1
             // 
