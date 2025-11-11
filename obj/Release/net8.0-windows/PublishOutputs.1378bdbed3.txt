@@ -1,0 +1,5 @@
+c:\User\senai.dsvsis\workspace\compilador\Exemplo.exe
+c:\User\senai.dsvsis\workspace\compilador\Exemplo.dll
+c:\User\senai.dsvsis\workspace\compilador\Exemplo.deps.json
+c:\User\senai.dsvsis\workspace\compilador\Exemplo.runtimeconfig.json
+c:\User\senai.dsvsis\workspace\compilador\Exemplo.pdb

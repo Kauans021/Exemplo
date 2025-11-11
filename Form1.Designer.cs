@@ -53,19 +53,21 @@
             labelTitle.AutoSize = true;
             labelTitle.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
             labelTitle.ForeColor = Color.Coral;
-            labelTitle.Location = new Point(12, 24);
-            labelTitle.MaximumSize = new Size(300, 65);
-            labelTitle.MinimumSize = new Size(300, 65);
+            labelTitle.Location = new Point(8, 14);
+            labelTitle.Margin = new Padding(2, 0, 2, 0);
+            labelTitle.MaximumSize = new Size(210, 39);
+            labelTitle.MinimumSize = new Size(210, 39);
             labelTitle.Name = "labelTitle";
-            labelTitle.Size = new Size(300, 65);
+            labelTitle.Size = new Size(210, 39);
             labelTitle.TabIndex = 0;
             labelTitle.Text = "Digite abaixo, os valores para Y e X para calcular:";
             // 
             // inputTextY
             // 
-            inputTextY.Location = new Point(58, 176);
+            inputTextY.Location = new Point(41, 106);
+            inputTextY.Margin = new Padding(2);
             inputTextY.Name = "inputTextY";
-            inputTextY.Size = new Size(223, 31);
+            inputTextY.Size = new Size(157, 23);
             inputTextY.TabIndex = 4;
             // 
             // btnClick1
@@ -77,9 +79,10 @@
             btnClick1.FlatStyle = FlatStyle.Flat;
             btnClick1.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             btnClick1.ForeColor = SystemColors.ButtonFace;
-            btnClick1.Location = new Point(12, 243);
+            btnClick1.Location = new Point(8, 146);
+            btnClick1.Margin = new Padding(2);
             btnClick1.Name = "btnClick1";
-            btnClick1.Size = new Size(95, 61);
+            btnClick1.Size = new Size(66, 37);
             btnClick1.TabIndex = 5;
             btnClick1.Text = "+";
             btnClick1.UseVisualStyleBackColor = false;
@@ -89,24 +92,25 @@
             // 
             labelOutput.AutoSize = true;
             labelOutput.BackColor = Color.FromArgb(40, 42, 54);
-            labelOutput.Font = new Font("Segoe UI", 18F);
+            labelOutput.Font = new Font("Segoe UI", 16F);
             labelOutput.ForeColor = Color.White;
-            labelOutput.Location = new Point(371, 88);
-            labelOutput.MaximumSize = new Size(400, 250);
-            labelOutput.MinimumSize = new Size(400, 250);
+            labelOutput.Location = new Point(260, 53);
+            labelOutput.Margin = new Padding(2, 0, 2, 0);
+            labelOutput.MaximumSize = new Size(280, 150);
+            labelOutput.MinimumSize = new Size(280, 150);
             labelOutput.Name = "labelOutput";
-            labelOutput.Padding = new Padding(10);
-            labelOutput.Size = new Size(400, 250);
+            labelOutput.Padding = new Padding(7, 6, 7, 6);
+            labelOutput.Size = new Size(280, 150);
             labelOutput.TabIndex = 15;
             labelOutput.Visible = false;
             // 
             // inputTextX
             // 
-            inputTextX.Location = new Point(58, 114);
+            inputTextX.Location = new Point(41, 68);
+            inputTextX.Margin = new Padding(2);
             inputTextX.Name = "inputTextX";
-            inputTextX.Size = new Size(223, 31);
+            inputTextX.Size = new Size(157, 23);
             inputTextX.TabIndex = 2;
-            
             // 
             // button3
             // 
@@ -117,9 +121,10 @@
             button3.FlatStyle = FlatStyle.Flat;
             button3.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             button3.ForeColor = SystemColors.ButtonFace;
-            button3.Location = new Point(12, 310);
+            button3.Location = new Point(8, 186);
+            button3.Margin = new Padding(2);
             button3.Name = "button3";
-            button3.Size = new Size(95, 61);
+            button3.Size = new Size(66, 37);
             button3.TabIndex = 8;
             button3.Text = "/";
             button3.UseVisualStyleBackColor = false;
@@ -134,9 +139,10 @@
             button6.FlatStyle = FlatStyle.Flat;
             button6.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             button6.ForeColor = SystemColors.ButtonFace;
-            button6.Location = new Point(12, 377);
+            button6.Location = new Point(8, 226);
+            button6.Margin = new Padding(2);
             button6.Name = "button6";
-            button6.Size = new Size(95, 61);
+            button6.Size = new Size(66, 37);
             button6.TabIndex = 11;
             button6.Text = "%";
             button6.UseVisualStyleBackColor = false;
@@ -151,9 +157,10 @@
             button1.FlatStyle = FlatStyle.Flat;
             button1.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             button1.ForeColor = SystemColors.ButtonFace;
-            button1.Location = new Point(113, 243);
+            button1.Location = new Point(79, 146);
+            button1.Margin = new Padding(2);
             button1.Name = "button1";
-            button1.Size = new Size(95, 61);
+            button1.Size = new Size(66, 37);
             button1.TabIndex = 6;
             button1.Text = "-";
             button1.UseVisualStyleBackColor = false;
@@ -168,9 +175,10 @@
             button2.FlatStyle = FlatStyle.Flat;
             button2.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             button2.ForeColor = SystemColors.ButtonFace;
-            button2.Location = new Point(113, 310);
+            button2.Location = new Point(79, 186);
+            button2.Margin = new Padding(2);
             button2.Name = "button2";
-            button2.Size = new Size(95, 61);
+            button2.Size = new Size(66, 37);
             button2.TabIndex = 9;
             button2.Text = "x²";
             button2.UseVisualStyleBackColor = false;
@@ -185,9 +193,10 @@
             button4.FlatStyle = FlatStyle.Flat;
             button4.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             button4.ForeColor = SystemColors.ButtonFace;
-            button4.Location = new Point(113, 377);
+            button4.Location = new Point(79, 226);
+            button4.Margin = new Padding(2);
             button4.Name = "button4";
-            button4.Size = new Size(95, 61);
+            button4.Size = new Size(66, 37);
             button4.TabIndex = 12;
             button4.Text = "010101";
             button4.UseVisualStyleBackColor = false;
@@ -202,9 +211,10 @@
             button5.FlatStyle = FlatStyle.Flat;
             button5.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             button5.ForeColor = SystemColors.ButtonFace;
-            button5.Location = new Point(214, 243);
+            button5.Location = new Point(150, 146);
+            button5.Margin = new Padding(2);
             button5.Name = "button5";
-            button5.Size = new Size(95, 61);
+            button5.Size = new Size(66, 37);
             button5.TabIndex = 7;
             button5.Text = "*";
             button5.UseVisualStyleBackColor = false;
@@ -219,9 +229,10 @@
             button7.FlatStyle = FlatStyle.Flat;
             button7.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             button7.ForeColor = SystemColors.ButtonFace;
-            button7.Location = new Point(214, 310);
+            button7.Location = new Point(150, 186);
+            button7.Margin = new Padding(2);
             button7.Name = "button7";
-            button7.Size = new Size(95, 61);
+            button7.Size = new Size(66, 37);
             button7.TabIndex = 10;
             button7.Text = "√x";
             button7.UseVisualStyleBackColor = false;
@@ -236,9 +247,10 @@
             button8.FlatStyle = FlatStyle.Flat;
             button8.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             button8.ForeColor = SystemColors.ButtonFace;
-            button8.Location = new Point(214, 377);
+            button8.Location = new Point(150, 226);
+            button8.Margin = new Padding(2);
             button8.Name = "button8";
-            button8.Size = new Size(95, 61);
+            button8.Size = new Size(66, 37);
             button8.TabIndex = 13;
             button8.Text = "x^​y";
             button8.UseVisualStyleBackColor = false;
@@ -249,11 +261,12 @@
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
             label1.ForeColor = Color.Coral;
-            label1.Location = new Point(371, 9);
-            label1.MaximumSize = new Size(400, 65);
-            label1.MinimumSize = new Size(400, 65);
+            label1.Location = new Point(260, 5);
+            label1.Margin = new Padding(2, 0, 2, 0);
+            label1.MaximumSize = new Size(280, 39);
+            label1.MinimumSize = new Size(280, 39);
             label1.Name = "label1";
-            label1.Size = new Size(400, 65);
+            label1.Size = new Size(280, 39);
             label1.TabIndex = 14;
             label1.Text = "RESULTADO";
             label1.TextAlign = ContentAlignment.BottomCenter;
@@ -263,11 +276,12 @@
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
             label2.ForeColor = Color.Coral;
-            label2.Location = new Point(12, 111);
-            label2.MaximumSize = new Size(40, 40);
-            label2.MinimumSize = new Size(40, 40);
+            label2.Location = new Point(8, 67);
+            label2.Margin = new Padding(2, 0, 2, 0);
+            label2.MaximumSize = new Size(28, 24);
+            label2.MinimumSize = new Size(28, 24);
             label2.Name = "label2";
-            label2.Size = new Size(40, 40);
+            label2.Size = new Size(28, 24);
             label2.TabIndex = 1;
             label2.Text = "X:";
             // 
@@ -276,11 +290,12 @@
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
             label3.ForeColor = Color.Coral;
-            label3.Location = new Point(12, 173);
-            label3.MaximumSize = new Size(40, 40);
-            label3.MinimumSize = new Size(40, 40);
+            label3.Location = new Point(8, 104);
+            label3.Margin = new Padding(2, 0, 2, 0);
+            label3.MaximumSize = new Size(28, 24);
+            label3.MinimumSize = new Size(28, 24);
             label3.Name = "label3";
-            label3.Size = new Size(40, 40);
+            label3.Size = new Size(28, 24);
             label3.TabIndex = 3;
             label3.Text = "Y:";
             // 
@@ -290,15 +305,15 @@
             labelOutput2.BackColor = Color.FromArgb(40, 42, 54);
             labelOutput2.Font = new Font("Segoe UI", 20F);
             labelOutput2.ForeColor = Color.FromArgb(255, 127, 84);
-            labelOutput2.Location = new Point(516, 214);
-            labelOutput2.MaximumSize = new Size(100, 90);
-            labelOutput2.MinimumSize = new Size(100, 90);
+            labelOutput2.Location = new Point(347, 129);
+            labelOutput2.Margin = new Padding(2, 0, 2, 0);
+            labelOutput2.MaximumSize = new Size(110, 54);
+            labelOutput2.MinimumSize = new Size(110, 54);
             labelOutput2.Name = "labelOutput2";
-            labelOutput2.Padding = new Padding(10);
-            labelOutput2.Size = new Size(100, 90);
+            labelOutput2.Padding = new Padding(7, 6, 7, 6);
+            labelOutput2.Size = new Size(110, 54);
             labelOutput2.TabIndex = 16;
             labelOutput2.Visible = false;
-            
             // 
             // button9
             // 
@@ -309,11 +324,12 @@
             button9.FlatStyle = FlatStyle.Flat;
             button9.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             button9.ForeColor = SystemColors.ButtonFace;
-            button9.Location = new Point(398, 363);
-            button9.MaximumSize = new Size(350, 60);
-            button9.MinimumSize = new Size(350, 60);
+            button9.Location = new Point(279, 218);
+            button9.Margin = new Padding(2);
+            button9.MaximumSize = new Size(245, 36);
+            button9.MinimumSize = new Size(245, 36);
             button9.Name = "button9";
-            button9.Size = new Size(350, 60);
+            button9.Size = new Size(245, 36);
             button9.TabIndex = 17;
             button9.Text = "APAGAR";
             button9.UseVisualStyleBackColor = false;
@@ -321,10 +337,10 @@
             // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.DarkRed;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(566, 281);
             Controls.Add(button9);
             Controls.Add(labelOutput2);
             Controls.Add(label3);
@@ -344,9 +360,11 @@
             Controls.Add(inputTextY);
             Controls.Add(labelTitle);
             FormBorderStyle = FormBorderStyle.SizableToolWindow;
+            Margin = new Padding(2);
             Name = "Form1";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "...";
+            Load += Form1_Load;
             ResumeLayout(false);
             PerformLayout();
         }

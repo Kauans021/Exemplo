@@ -20,14 +20,23 @@ namespace Exemplo
             inputTextX.Visible = true;
             inputTextX.Text = vazio;
 
-            
+
             inputTextY.Visible = true;
             inputTextY.Text = vazio;
         }
         public void setInputs()
         {
             op.setXFromInput(double.Parse(inputTextX.Text));
-            op.setYFromInput(double.Parse(inputTextY.Text));
+            if (String.IsNullOrWhiteSpace(inputTextY.Text))
+            {
+                op.setYFromInput(0);
+            }
+            else
+            {
+                op.setYFromInput(double.Parse(inputTextY.Text));
+            }
+
+
 
         }
 
@@ -138,7 +147,7 @@ namespace Exemplo
         {
             setInputs();
             double result = op.valorQuadrado();
-            printResult1(op.getX(), op.getX(), "^²", result);
+            printResult1(op.getX(), op.getX(), " ^ 2 ", result);
         }
 
         public void onBtnraizQuadrada_Click(object sender, EventArgs e)
@@ -159,14 +168,14 @@ namespace Exemplo
         {
             setInputs();
             double result = op.binario();
-            printResult1(op.getX(), op.getY(), " em binario é ", result);
+            printResult1(op.getX(), op.getY(), " em binario ", result);
         }
 
         public void onBtnRaizY_Click(object sender, EventArgs e)
         {
             setInputs();
             double result = op.raizY();
-            printResult(op.getX(), op.getY(), " elevado á ", result);
+            printResult(op.getX(), op.getY(), " ^ ", result);
         }
 
         public void onBtnApagar_Click(object sender, EventArgs e)
@@ -174,12 +183,13 @@ namespace Exemplo
             setInputs();
             string result = op.apagar();
             printResult6(" ");
-            
+
         }
 
-       
+        private void Form1_Load(object sender, EventArgs e)
+        {
 
-        
+        }
     }
-    
+
 }

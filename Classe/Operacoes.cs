@@ -69,17 +69,43 @@ namespace Exemplo.Classes
             return (this.x / 100) * this.y;
         }
 
-        public int binario()
+        public double binario()
         {
-            int num = (int)this.x;
-            return  int.Parse(Convert.ToString(num, 2));
+            long value = (long)this.x;
+
+            if (value <= 0)
+            {
+                return 0000;
+            }
+            else
+            {
+                String restos = "";
+                while (value > 0)
+                {
+                    restos += value % 2;
+                    value = value / 2;
+                }
+                String resultadoBinario = "";
+                for (int i = restos.Length - 1; i >= 0; i--)
+                {
+                    resultadoBinario += restos[i];
+                }
+                return long.Parse(resultadoBinario);
+            }
 
         }
 
         public double raizY()
-        { 
-            return Math.Pow(this.x, this.y);
-       
+        {
+            int count = 0;
+            double result = this.x;
+
+            while (count < (this.y - 1))
+            {
+                result *= this.x;
+                count++;
+            }
+            return result;
         }
 
         public string apagar()
