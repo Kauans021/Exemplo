@@ -77,8 +77,8 @@
             btnClick1.FlatAppearance.BorderColor = Color.White;
             btnClick1.FlatAppearance.BorderSize = 3;
             btnClick1.FlatStyle = FlatStyle.Flat;
-            btnClick1.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            btnClick1.ForeColor = SystemColors.ButtonFace;
+            btnClick1.Font = new Font("Segoe UI", 14F, FontStyle.Bold);
+            btnClick1.ForeColor = Color.White;
             btnClick1.Location = new Point(8, 146);
             btnClick1.Margin = new Padding(2);
             btnClick1.Name = "btnClick1";
@@ -119,7 +119,7 @@
             button3.FlatAppearance.BorderColor = Color.White;
             button3.FlatAppearance.BorderSize = 3;
             button3.FlatStyle = FlatStyle.Flat;
-            button3.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            button3.Font = new Font("Segoe UI", 11F, FontStyle.Bold);
             button3.ForeColor = SystemColors.ButtonFace;
             button3.Location = new Point(8, 186);
             button3.Margin = new Padding(2);
@@ -155,7 +155,7 @@
             button1.FlatAppearance.BorderColor = Color.White;
             button1.FlatAppearance.BorderSize = 3;
             button1.FlatStyle = FlatStyle.Flat;
-            button1.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            button1.Font = new Font("Segoe UI", 14F, FontStyle.Bold);
             button1.ForeColor = SystemColors.ButtonFace;
             button1.Location = new Point(79, 146);
             button1.Margin = new Padding(2);
@@ -173,7 +173,7 @@
             button2.FlatAppearance.BorderColor = Color.White;
             button2.FlatAppearance.BorderSize = 3;
             button2.FlatStyle = FlatStyle.Flat;
-            button2.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            button2.Font = new Font("Segoe UI", 11F, FontStyle.Bold);
             button2.ForeColor = SystemColors.ButtonFace;
             button2.Location = new Point(79, 186);
             button2.Margin = new Padding(2);
@@ -209,7 +209,7 @@
             button5.FlatAppearance.BorderColor = Color.White;
             button5.FlatAppearance.BorderSize = 3;
             button5.FlatStyle = FlatStyle.Flat;
-            button5.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            button5.Font = new Font("Segoe UI", 14F, FontStyle.Bold);
             button5.ForeColor = SystemColors.ButtonFace;
             button5.Location = new Point(150, 146);
             button5.Margin = new Padding(2);
@@ -227,7 +227,7 @@
             button7.FlatAppearance.BorderColor = Color.White;
             button7.FlatAppearance.BorderSize = 3;
             button7.FlatStyle = FlatStyle.Flat;
-            button7.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            button7.Font = new Font("Segoe UI", 11F, FontStyle.Bold);
             button7.ForeColor = SystemColors.ButtonFace;
             button7.Location = new Point(150, 186);
             button7.Margin = new Padding(2);
@@ -305,14 +305,15 @@
             labelOutput2.BackColor = Color.FromArgb(40, 42, 54);
             labelOutput2.Font = new Font("Segoe UI", 20F);
             labelOutput2.ForeColor = Color.FromArgb(255, 127, 84);
-            labelOutput2.Location = new Point(347, 129);
+            labelOutput2.Location = new Point(298, 129);
             labelOutput2.Margin = new Padding(2, 0, 2, 0);
-            labelOutput2.MaximumSize = new Size(110, 54);
-            labelOutput2.MinimumSize = new Size(110, 54);
+            labelOutput2.MaximumSize = new Size(200, 54);
+            labelOutput2.MinimumSize = new Size(200, 54);
             labelOutput2.Name = "labelOutput2";
             labelOutput2.Padding = new Padding(7, 6, 7, 6);
-            labelOutput2.Size = new Size(110, 54);
+            labelOutput2.Size = new Size(200, 54);
             labelOutput2.TabIndex = 16;
+            labelOutput2.TextAlign = ContentAlignment.MiddleCenter;
             labelOutput2.Visible = false;
             // 
             // button9

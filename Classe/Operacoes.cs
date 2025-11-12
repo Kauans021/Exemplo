@@ -61,7 +61,7 @@ namespace Exemplo.Classes
 
         public double raizQuadrada()
         {
-            return this.x / this.x;
+            return Math.Sqrt(this.x);
         }
 
         public double porcentagem()
